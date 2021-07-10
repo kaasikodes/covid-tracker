@@ -1,0 +1,33 @@
+.map{
+    height: 500px;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 20px;
+    margin: 1rem 0;
+    box-shadow: 0 0 8px -4px rgba(141, 102, 102, 0.5);
+}
+.map .leaflet-container{
+    height: 100%;
+   
+}
+
+.info-flag{
+    height: 80px;
+    width:100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+
+}
+
+.info-name{
+    font-size: 20px;
+    color: #555;
+    font-weight: bold;
+}
+
+.info-cases,.info-deaths,.info-recovered{
+    font-size: 16px;
+    margin-top: 5px
+    
+}

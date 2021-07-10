@@ -1,0 +1,108 @@
+.app{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.app__left{
+    flex: 2;
+}
+.app__right{
+    display: flex;
+    flex-direction: column;
+    
+    margin-left: 20px;
+}
+@media (max-width: 990px) {
+    .app{
+        flex-direction: column;
+        /* align-items: center; */
+    }
+    .app__header>h1{
+        font-size: 1.5rem;
+    }
+
+    .app__right{
+        margin-top: 40px;
+        
+        margin-left: 0;
+    }
+
+    .app__stats{
+        flex-direction: column;
+        /* align-items: flex-end; */
+        width: 100%;
+        /* background-color: #fff;   */
+    }
+    .infoBox{
+        margin: 0;
+        width: 100%;
+
+    }
+    .infoBox:not(:last-child){
+        margin-bottom: 10px;
+    }
+    
+}
+
+.app__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    
+    margin-bottom: 40px;
+}
+.app__header >h1{
+    color: red;
+    font-size: 2rem;
+}
+.app__dropdown{
+    background-color: #fff !important;
+}
+
+.app__stats{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.table{
+    height: 400px;
+    overflow-y: scroll;
+    margin-top: 20px;
+    
+}
+
+.table tbody{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.table .table__item{
+    
+    width: 100%; 
+    display: flex;
+    justify-content: space-between;
+    /* fixing the not showing on full width when reponsv */
+}
+.table .table__item td{
+    padding: 0.5rem;
+    
+}
+
+.table tr:nth-of-type(odd){
+    background-color: #f5f5f5;
+}
+
+
+.app__graphTitle{
+    margin: 20px 0;
+}
+.app__graph{
+    flex: 1;
+}
